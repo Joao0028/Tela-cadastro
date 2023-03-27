@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400&display=swap');
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cadastro{
+    background: #e2efe8;
+    width: 80%;
+    margin: 4em auto;
+    height: 80vh;
+    border-radius: 22px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container__cadastro{
+    display: flex;
+}
+
+.primario , .secundario{
+    padding: 1em;
+    width: 50%;
+    height: 80vh;
+}
+.primario{
+    position: absolute;
+    background: #e2efe8;
+    right: -3%;
+    width: 52%;
+    /**/
+}
+.secundario{
+    position: absolute;
+    background: linear-gradient(#de152d , #e63443);
+    width: 50%;
+    right: 48%;
+    /**/
+}
+
+
+
+@keyframes direita-animation{
+    from{
+        right: 47%;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes esquerda-animation{
+    from{
+        right: 0;
+    }
+    to{
+        right: 47%;
+    }
+}
+
+.login{
+    padding: 1em;
+    border-radius: 22px;
+    width: 40%;
+    font-size: 15px;
+    margin: 1.5em auto;
+    display: block;
+    border: none;
+    background-color: #de152d;
+    color: white;
+}
+.login:hover{
+    background-color: white;
+    color: #de152d;
+}
+
+
+.criar__conta{
+    white-space: nowrap;
+    padding: 1em;
+    border-radius: 22px;
+    width: 40%;
+    font-size: 15px;
+    margin: 1.5em auto;
+    display: block;
+    color:#de152d;
+    background-color: white;
+    border: none;
+}
+.criar__conta:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.desloca__direita{
+    animation: direita-animation 0.5s forwards ;
+}
+.desloca__esquerda{
+    animation: esquerda-animation 0.5s forwards ;
+}
+
+h1,h2{
+    color: white;
+}
+
+h1{
+    font-weight: 800;
+    text-align: center;
+    margin: 4em 0 2em;
+    font-size: 22px;
+}
+h2{
+    text-align: justify;
+    margin: 1em 2em 3em;
+    font-size: 18px;
+}
+
+.inputes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.inputes input{
+    border: none;
+    border-radius: 2px;
+    width: 60%;
+    margin: 1em 0;
+    padding: 1em 0.5em;
+    background: #c5d2bb;
+}
+
+.nome{
+    display: none;
+}
+
+.crie__ja{
+    color: #890002;
+}
+
+.ja{
+    color: black;
+}
+.nome1{
+    display: none;
+}
